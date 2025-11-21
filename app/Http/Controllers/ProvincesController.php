@@ -10,6 +10,6 @@ class ProvincesController extends Controller
     //
     public function index(){
         $provinces = provinces::all();
-        return view("provices", ["provinces" => $provinces]);
+        return view("provinces", ["provinces" => $provinces]);
     }
 }

@@ -8,4 +8,15 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    --animate-items: item 2s linear 1;
+    @keyframes item{
+        0%{
+            opacity: 0;
+            translate: -50px 0;
+        }
+        100%{
+            opacity: 1;
+            translate: 0 0;
+        }
+    }
 }

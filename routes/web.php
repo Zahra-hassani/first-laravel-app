@@ -4,6 +4,7 @@ use App\Http\Controllers\CountriesController;
 use App\Http\Controllers\CustomersController;
 use App\Http\Controllers\ProvincesController;
 use App\Http\Controllers\StudentsController;
+use App\Http\Controllers\TeachersController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -17,3 +18,7 @@ Route::get('customers', [CustomersController::class,'index']);
 Route::get("provinces",[ProvincesController::class,"index"]);
 
 Route::get("countries",[CountriesController::class,"index"]);
+
+Route::get("teachers",[TeachersController::class,'addTeachers']);
+
+Route::get('showteachers',[TeachersController::class,'showTeachers']);

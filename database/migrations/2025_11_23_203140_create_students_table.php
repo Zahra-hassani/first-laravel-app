@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('lastName');
-            $table->integer('age');
-            $table->timestamps();
+            $table->integer('grade');
+            $table->integer('score');
         });
     }
 
@@ -26,6 +26,5 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('students');
-      
     }
 };

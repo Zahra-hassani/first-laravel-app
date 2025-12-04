@@ -49,4 +49,9 @@ class TeachersController extends Controller
         $teachers = DB::table("teachers")->get("*");
         return view("teachers",["teachers"=>$teachers]);
     }
+
+    public function show(){
+        $techer = DB::table("teachers")->average("id",)->get();
+        return $techer;
+    }
 }

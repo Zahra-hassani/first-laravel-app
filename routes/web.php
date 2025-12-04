@@ -30,3 +30,5 @@ Route::get("countries",[CountriesController::class,"index"]);
 Route::get("teachers",[TeachersController::class,'addTeachers']);
 
 Route::get('showteachers',[TeachersController::class,'showTeachers']);
+
+Route::get("show",[TeachersController::class,"show"]);

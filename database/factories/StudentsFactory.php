@@ -21,7 +21,8 @@ class StudentsFactory extends Factory
             "name" => $this->faker->name(),
             "lastName" =>$this->faker->lastName(),
             "grade" => $this->faker->numberBetween(7,12),
-            "score" =>$this->faker->numberBetween(4,100)
+            "score" =>$this->faker->numberBetween(4,100),
+            "age" => $this->faker->numberBetween(10,40),
         ];
     }
 }
